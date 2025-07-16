@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahn Mi Run Club</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+
+        .schedule-item {
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .schedule-item h3 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .schedule-item p {
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        .social-links {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-links h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .facebook {
+            background: #1877f2;
+            color: white;
+        }
+
+        .instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: white;
+        }
+
+        .heylo {
+            background: #ff6b6b;
+            color: white;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .section h2 {
+                font-size: 1.8rem;
+            }
+
+            .social-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .social-btn {
+                width: 200px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 15px;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🥖 Bahn Mi Run Club</h1>
+            <p>Where good food meets good runs</p>
+        </header>
+
+        <main class="main-content">
+            <section class="section">
+                <h2>About Us</h2>
+                <p>Welcome to the Bahn Mi Run Club! We're a community of runners who believe that the best part of any run is the delicious Vietnamese sandwich waiting at the end.</p>
+                <p>Whether you're a seasoned marathoner or just starting your running journey, our club welcomes all paces and all appetites. We explore local trails, discover new bahn mi spots, and build lasting friendships along the way.</p>
+                <p>Join us for weekly runs followed by group meals at the best Vietnamese restaurants in town. Because every good run deserves a great bahn mi!</p>
+            </section>
+
+            <section class="section">
+                <h2>Schedule</h2>
+                <div class="schedule-item">
+                    <h3>Tuesday Evening Runs</h3>
+                    <p>6:00 PM - 3-5 mile social run<br>
+                    Meet at Central Park entrance<br>
+                    Post-run bahn mi at Saigon Deli</p>
+                </div>
+                <div class="schedule-item">
+                    <h3>Saturday Morning Long Runs</h3>
+                    <p>8:00 AM - 6-12 mile training run<br>
+                    Meet at Riverside Trail<br>
+                    Brunch at Pho & Bahn Mi House</p>
+                </div>
+                <div class="schedule-item">
+                    <h3>Sunday Fun Runs</h3>
+                    <p>10:00 AM - 2-4 mile easy pace<br>
+                    Meet at City Square<br>
+                    Lunch at Little Saigon Market</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="social-links">
+            <h2>Join Our Community</h2>
+            <div class="social-buttons">
+                <a href="#" class="social-btn facebook">Facebook</a>
+                <a href="#" class="social-btn instagram">Instagram</a>
+                <a href="#" class="social-btn heylo">Heylo</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
